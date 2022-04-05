@@ -1,0 +1,646 @@
+[ 2022-04-04T14:16:50+08:00 ] ::1 /treehole/index.php/Home/Test/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001544s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001511s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001539s ]
+
+[ 2022-04-04T14:21:57+08:00 ] ::1 /treehole/index.php/Home/Test/insert_test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000995s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001086s ]
+ERR: SQLSTATE[HY000] [1049] Unknown database 'test'
+
+[ 2022-04-04T14:23:16+08:00 ] ::1 /treehole/index.php/Home/Test/insert_test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001168s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001191s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.0014s ]
+ERR: 1364:Field 'content' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `message` (`user_id`,`username`,`face_url`,`send_timestamp`) VALUES ('1','zhangsan','xxx.jpg','1649053396')
+ERR: 1364:Field 'content' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `message` (`user_id`,`username`,`face_url`,`send_timestamp`) VALUES ('1','zhangsan','xxx.jpg','1649053396')
+
+[ 2022-04-04T14:24:00+08:00 ] ::1 /treehole/index.php/Home/Test/insert_test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000864s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000965s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000986s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.0019s ]
+SQL: INSERT INTO `message` (`user_id`,`username`,`face_url`,`content`,`send_timestamp`) VALUES ('1','zhangsan','xxx.jpg','shuai!','1649053440') [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001273s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001294s ]
+
+[ 2022-04-04T14:26:00+08:00 ] ::1 /treehole/index.php/Home/Test/insert_test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001080s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.0007s ]
+SQL: INSERT INTO `message` (`user_id`,`username`,`face_url`,`content`,`send_timestamp`) VALUES ('2','chensan','xxx.jpg','bushuai!','1649053560') [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001225s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001248s ]
+
+[ 2022-04-04T14:30:48+08:00 ] ::1 /treehole/index.php/Home/Test/select_test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001438s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `message` WHERE `user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001267s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001283s ]
+
+[ 2022-04-04T14:31:18+08:00 ] ::1 /treehole/index.php/Home/Test/select_test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001328s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `message` WHERE `user_id` = 1  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001343s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001365s ]
+
+[ 2022-04-04T14:31:27+08:00 ] ::1 /treehole/index.php/Home/Test/select_test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000795s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000971s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000992s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `message` WHERE `user_id` = 1  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001526s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001561s ]
+
+[ 2022-04-04T14:33:58+08:00 ] ::1 /treehole/index.php/Home/Test/insert_test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001145s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001108s ]
+ERR: syntax error, unexpected 'select' (T_STRING)
+
+[ 2022-04-04T14:34:26+08:00 ] ::1 /treehole/index.php/Home/Test/insert_test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000874s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001435s ]
+ERR: syntax error, unexpected 'select' (T_STRING)
+
+[ 2022-04-04T14:34:32+08:00 ] ::1 /treehole/index.php/Home/Test/insert_test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001015s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001108s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.0007s ]
+SQL: INSERT INTO `message` (`user_id`,`username`,`face_url`,`content`,`send_timestamp`) VALUES ('1','chsan','xxx.jpg','bushuai!','1649054072') [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001341s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001367s ]
+
+[ 2022-04-04T14:34:40+08:00 ] ::1 /treehole/index.php/Home/Test/select_test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000892s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000928s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000950s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `message` WHERE `user_id` = 1  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`username` FROM `message` WHERE `user_id` = 1  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001334s ]
+
+[ 2022-04-04T14:39:31+08:00 ] ::1 /treehole/index.php/Home/Test/find_test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001041s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001162s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `message` WHERE `user_id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001474s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001489s ]
+
+[ 2022-04-04T14:44:51+08:00 ] ::1 /treehole/index.php/Home/Test/save_test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000992s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001279s ]
+ERR: 非法操作:save_test
+
+[ 2022-04-04T14:46:08+08:00 ] ::1 /treehole/index.php/Home/Test/save_test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001298s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001373s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001402s ]
+
+[ 2022-04-04T14:46:12+08:00 ] ::1 /treehole/index.php/Home/Test/save_test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000758s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001402s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001613s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001635s ]
+
+[ 2022-04-04T14:46:59+08:00 ] ::1 /treehole/index.php/Home/Test/save_test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000964s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001252s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.0011s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001113s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001130s ]
+
+[ 2022-04-04T14:47:41+08:00 ] ::1 /treehole/index.php/Home/Test/save_test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000973s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001003s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001029s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.0007s ]
+SQL: UPDATE `message` SET `totallike`='1' WHERE `id` = 1 [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001072s ]
+
+[ 2022-04-04T14:48:03+08:00 ] ::1 /treehole/index.php/Home/Test/save_test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000751s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000889s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000912s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.0017s ]
+SQL: UPDATE `message` SET `totallike`='1' WHERE `id` = 1 [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001094s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001109s ]
+
+[ 2022-04-04T14:54:10+08:00 ] ::1 /treehole/index.php/Home/Test/delete_test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001187s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001120s ]
+SQL: SHOW COLUMNS FROM `message` [ RunTime:0.0017s ]
+SQL: DELETE FROM `message` WHERE `id` = 1 [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001260s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001280s ]
+
+[ 2022-04-04T15:06:04+08:00 ] ::1 /treehole/index.php/Home/TUser/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000932s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001253s ]
+ERR: 无法加载控制器:TUser
+
+[ 2022-04-04T15:06:14+08:00 ] ::1 /treehole/index.php/Home/User/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000996s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001117s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001143s ]
+NOTIC: [8] Undefined index: usernaem D:\phpstudy_pro\WWW\treehole\Application\Home\Controller\UserController.class.php 第 14 行.
+
+[ 2022-04-04T15:10:59+08:00 ] ::1 /treehole/index.php/Home/User/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000960s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001082s ]
+NOTIC: [8] Undefined index: usernaem D:\phpstudy_pro\WWW\treehole\Application\Home\Controller\UserController.class.php 第 14 行.
+
+[ 2022-04-04T15:12:10+08:00 ] ::1 /treehole/index.php/Home/User/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001111s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001134s ]
+NOTIC: [8] Undefined index: usernaem D:\phpstudy_pro\WWW\treehole\Application\Home\Controller\UserController.class.php 第 14 行.
+
+[ 2022-04-04T15:12:21+08:00 ] ::1 /treehole/index.php/Home/User/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001054s ]
+NOTIC: [8] Undefined index: usernaem D:\phpstudy_pro\WWW\treehole\Application\Home\Controller\UserController.class.php 第 14 行.
+
+[ 2022-04-04T15:13:10+08:00 ] ::1 /treehole/index.php/Home/User/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000855s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000931s ]
+NOTIC: [8] Undefined index: usernaem D:\phpstudy_pro\WWW\treehole\Application\Home\Controller\UserController.class.php 第 14 行.
+
+[ 2022-04-04T15:13:30+08:00 ] ::1 /treehole/index.php/Home/User/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001169s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001195s ]
+NOTIC: [8] Undefined index: usernaem D:\phpstudy_pro\WWW\treehole\Application\Home\Controller\UserController.class.php 第 14 行.
+
+[ 2022-04-04T15:13:55+08:00 ] ::1 /treehole/index.php/Home/User/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000791s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001299s ]
+NOTIC: [8] Undefined index: usernaem D:\phpstudy_pro\WWW\treehole\Application\Home\Controller\UserController.class.php 第 14 行.
+
+[ 2022-04-04T15:14:11+08:00 ] ::1 /treehole/index.php/Home/User/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000833s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000949s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000967s ]
+NOTIC: [8] Undefined index: usernaem D:\phpstudy_pro\WWW\treehole\Application\Home\Controller\UserController.class.php 第 14 行.
+
+[ 2022-04-04T15:15:01+08:00 ] ::1 /treehole/index.php/Home/User/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000968s ]
+NOTIC: [8] Undefined index: usernaem D:\phpstudy_pro\WWW\treehole\Application\Home\Controller\UserController.class.php 第 14 行.
+
+[ 2022-04-04T15:15:21+08:00 ] ::1 /treehole/index.php/Home/User/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001386s ]
+NOTIC: [8] Undefined index: usernaem D:\phpstudy_pro\WWW\treehole\Application\Home\Controller\UserController.class.php 第 14 行.
+
+[ 2022-04-04T15:15:28+08:00 ] ::1 /treehole/index.php/Home/User/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000717s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001374s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001091s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001111s ]
+
+[ 2022-04-04T15:18:22+08:00 ] ::1 /treehole/index.php/Home/User/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001412s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001145s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001169s ]
+
+[ 2022-04-04T15:18:25+08:00 ] ::1 /treehole/index.php/Home/User/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000841s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000978s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000999s ]
+
+[ 2022-04-04T15:18:30+08:00 ] ::1 /treehole/index.php/Home/User/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000859s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000968s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000987s ]
+NOTIC: [8] Undefined index: phone D:\phpstudy_pro\WWW\treehole\Application\Home\Controller\UserController.class.php 第 23 行.
+
+[ 2022-04-04T15:20:39+08:00 ] ::1 /treehole/index.php/Home/User/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001007s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001378s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001402s ]
+
+[ 2022-04-04T15:20:48+08:00 ] ::1 /treehole/index.php/Home/User/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001007s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001397s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001135s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001157s ]
+
+[ 2022-04-04T15:20:57+08:00 ] ::1 /treehole/index.php/Home/User/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000902s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000952s ]
+NOTIC: [8] Undefined index: password_again D:\phpstudy_pro\WWW\treehole\Application\Home\Controller\UserController.class.php 第 41 行.
+
+[ 2022-04-04T15:21:03+08:00 ] ::1 /treehole/index.php/Home/User/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000928s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000973s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001453s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001487s ]
+
+[ 2022-04-04T15:21:33+08:00 ] ::1 /treehole/index.php/Home/User/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001017s ]
+NOTIC: [8] Undefined variable: dump D:\phpstudy_pro\WWW\treehole\Application\Home\Controller\UserController.class.php 第 50 行.
+ERR: Function name must be a string
+
+[ 2022-04-04T15:22:00+08:00 ] ::1 /treehole/index.php/Home/User/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000880s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000931s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000953s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001060s ]
+
+[ 2022-04-04T15:27:39+08:00 ] ::1 /treehole/index.php/Home/User/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000991s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001124s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `user` WHERE `phone` = '12322234234' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001290s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001305s ]
+
+[ 2022-04-04T15:30:57+08:00 ] ::1 /treehole/index.php/Home/User/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001240s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `user` WHERE `phone` = '12322234234' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001385s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001409s ]
+
+[ 2022-04-04T15:31:18+08:00 ] ::1 /treehole/index.php/Home/User/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001086s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `user` WHERE `phone` = '12322234234' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: face_url D:\phpstudy_pro\WWW\treehole\Application\Home\Controller\UserController.class.php 第 83 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001260s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001279s ]
+
+[ 2022-04-04T15:31:54+08:00 ] ::1 /treehole/index.php/Home/User/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000861s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `user` WHERE `phone` = '12322234234' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001066s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001083s ]
+
+[ 2022-04-04T15:39:24+08:00 ] ::1 /treehole/index.php/Home/User/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001150s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001172s ]
+
+[ 2022-04-04T15:39:35+08:00 ] ::1 /treehole/index.php/Home/User/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001413s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `user` WHERE `phone` = '12322234234' LIMIT 1   [ RunTime:0.0003s ]
+ERR: Call to a member function add() on null
+
+[ 2022-04-04T15:39:52+08:00 ] ::1 /treehole/index.php/Home/User/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000776s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000926s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `user` WHERE `phone` = '12322234234' LIMIT 1   [ RunTime:0.0002s ]
+ERR: Call to a member function add() on null
+
+[ 2022-04-04T15:41:03+08:00 ] ::1 /treehole/index.php/Home/User/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000972s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `user` WHERE `phone` = '12322234234' LIMIT 1   [ RunTime:0.0002s ]
+ERR: Call to a member function add() on null
+
+[ 2022-04-04T15:44:43+08:00 ] ::1 /treehole/index.php/Home/User/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000946s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001081s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `user` WHERE `phone` = '12322234234' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001793s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001815s ]
+
+[ 2022-04-04T15:46:16+08:00 ] ::1 /treehole/index.php/Home/User/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000993s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001078s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE `phone` = '12322234234' LIMIT 1   [ RunTime:0.0002s ]
+ERR: Call to a member function add() on null
+
+[ 2022-04-04T15:46:18+08:00 ] ::1 /treehole/index.php/Home/User/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000999s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001085s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `user` WHERE `phone` = '12322234234' LIMIT 1   [ RunTime:0.0005s ]
+ERR: Call to a member function add() on null
+
+[ 2022-04-04T15:51:39+08:00 ] ::1 /treehole/index.php/Home/User/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000979s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001180s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001209s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `user` WHERE `phone` = '12322234234' LIMIT 1   [ RunTime:0.0003s ]
+ERR: Call to a member function add() on null
+
+[ 2022-04-04T15:52:27+08:00 ] ::1 /treehole/index.php/Home/User/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000998s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001079s ]
+
+[ 2022-04-04T15:52:34+08:00 ] ::1 /treehole/index.php/Home/User/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000832s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `user` WHERE `phone` = '12322234234' LIMIT 1   [ RunTime:0.0002s ]
+ERR: Call to a member function add() on null
+
+[ 2022-04-04T15:54:09+08:00 ] ::1 /treehole/index.php/Home/User/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001289s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `user` WHERE `phone` = '12322234234' LIMIT 1   [ RunTime:0.0003s ]
+ERR: Call to a member function add() on null
+
+[ 2022-04-04T16:00:04+08:00 ] ::1 /treehole/index.php/Home/User/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000953s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001053s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `user` WHERE `phone` = '12322234234' LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `user` (`username`,`phone`,`password`,`face_url`) VALUES ('张三','12322234234','fcea920f7412b5da7be0cf42b8c93759','xxx.jpg') [ RunTime:0.0004s ]
+
+[ 2022-04-04T16:02:06+08:00 ] ::1 /treehole/index.php/Home/User/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001011s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001132s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001159s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `user` WHERE `phone` = '12322234234' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2022-04-04T16:02:34+08:00 ] ::1 /treehole/index.php/Home/User/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000879s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000963s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `user` WHERE `phone` = '12322234235' LIMIT 1   [ RunTime:0.0002s ]
+SQL: INSERT INTO `user` (`username`,`phone`,`password`,`face_url`) VALUES ('张三','12322234235','fcea920f7412b5da7be0cf42b8c93759','xxx.jpg') [ RunTime:0.0002s ]
+

@@ -1,0 +1,69 @@
+[ 2022-04-03T20:53:18+08:00 ] ::1 /treehole/index.php/Home/index/test
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001661s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001185s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001214s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001141s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001163s ]
+
+[ 2022-04-03T20:54:22+08:00 ] ::1 /treehole/index.php/Home/index/test2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001009s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001381s ]
+ERR: 非法操作:test2
+
+[ 2022-04-03T20:55:15+08:00 ] ::1 /treehole/index.php/Home/index/test2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000988s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001071s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001099s ]
+ERR: 非法操作:test2
+
+[ 2022-04-03T20:55:17+08:00 ] ::1 /treehole/index.php/Home/index/test2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000886s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001116s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001146s ]
+ERR: 非法操作:test2
+
+[ 2022-04-03T20:55:18+08:00 ] ::1 /treehole/index.php/Home/index/test2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000993s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001101s ]
+ERR: 非法操作:test2
+
+[ 2022-04-03T20:55:27+08:00 ] ::1 /treehole/index.php/Home/index/test2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001262s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001396s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001431s ]
+
+[ 2022-04-03T21:00:43+08:00 ] ::1 /treehole/index.php/Home/User/sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001162s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001189s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001409s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001444s ]
+
